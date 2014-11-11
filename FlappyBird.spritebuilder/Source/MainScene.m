@@ -206,8 +206,7 @@
         // get the screen position of the bush
         CGPoint bushScreenPosition = [self convertToNodeSpace:bushWorldPosition];
         
-        // if the left corner is one complete width off the screen,
-        // move it to the right
+        // if the left corner is one complete width of the screen, move it to the right
         if (bushScreenPosition.x <= (-1 * bush.contentSize.width)) {
             for (CGPointObject *child in _parallaxBackground.parallaxArray) {
                 if (child.child == bush) {
